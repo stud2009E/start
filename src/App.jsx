@@ -1,12 +1,5 @@
 import ReactDom from "react-dom";
 import React from "react";
+import TemperatureCalculator from "./TemperatureCalculator.jsx";
 
-const el = (name) => {
-    return (<div >
-        <h1>Hello, {name}</h1>
-    </div>);
-}
-
-
-
-ReactDom.render(el("Sasha"), document.getElementById("root"));
+ReactDom.render(<TemperatureCalculator/>, document.getElementById("root"));
