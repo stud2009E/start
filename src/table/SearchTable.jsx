@@ -1,8 +1,10 @@
 import React from "react";
-import SearchBar from "./SearchBar.jsx";
-import TableHeader from "./TableHeader.jsx";
-import Row from "./Row.jsx";
-import GroupRow from "./GroupRow.jsx";
+import SearchBar from "./SearchBar";
+import TableHeader from "./TableHeader";
+import Row from "./Row";
+import GroupRow from "./GroupRow";
+
+import "./Table.css";
 
 class SearchTable extends React.Component{
     constructor(props) {
@@ -43,7 +45,7 @@ class SearchTable extends React.Component{
         });
 
         return (
-            <div>
+            <div className="bordered">
                 <SearchBar search={this.search}/>
                 <table>
                     <thead>

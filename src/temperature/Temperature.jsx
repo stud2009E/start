@@ -24,10 +24,12 @@ class Temperature extends React.Component{
 
     render() {
         return (
-            <div>
+            <div style={{
+                margin: "0.5rem 0.5rem"
+            }}>
                 {Type[this.props.scale]}:
                 <br/>
-                <input value={this.props.value} onChange={this.handleChange}/>
+                <input style={{width: "100%"}} value={this.props.value} onChange={this.handleChange}/>
             </div>
         );
     }

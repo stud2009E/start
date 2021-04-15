@@ -49,7 +49,12 @@ class TemperatureCalculator extends React.Component{
         const celsius = this.state.scale === "f" ? tryConvert(temperature, toCelsius) : temperature;
 
         return (
-            <div>
+            <div style={{
+                maxWidth: "15rem",
+                margin: "0.5rem 0.5rem",
+                border: "1px gray solid",
+                borderRadius: "0.3rem"
+            }}>
                 <Temperature scale="f" value={fahrenheit} temperatureChange={this.temperatureChange}/>
                 <Temperature scale="c" value={celsius} temperatureChange={this.temperatureChange}/>
             </div>
