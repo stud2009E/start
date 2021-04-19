@@ -7,9 +7,9 @@ function Row({name, price, stocked}){
     }
 
     return (
-      <tr>
-          <td style={style}>{name}</td>
-          <td>{price}</td>
+      <tr className="row">
+          <td className="cell" style={style}>{name}</td>
+          <td className="cell">{price}</td>
       </tr>
     );
 }

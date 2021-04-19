@@ -7,7 +7,7 @@ export default ({category}) => {
     }
 
     return (
-      <tr>
+      <tr className="row rowGroup">
           <td colSpan={2} style={style}>
               {category}
           </td>

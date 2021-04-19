@@ -1,3 +1,19 @@
 .bordered{
     border: 2px solid dimgray;
 }
+
+.row:nth-child(2n+1){
+    background-color: aliceblue;
+}
+
+.row:nth-child(2n){
+    background-color: bisque;
+}
+
+.row.rowGroup{
+    background-color: lightgoldenrodyellow;
+}
+
+.cell{
+    border: 1px dotted dimgray;
+}

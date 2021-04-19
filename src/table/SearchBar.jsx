@@ -5,6 +5,7 @@ class SearchBar extends React.Component{
         super(props);
 
         this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
         this.onCheckboxChange = this.onCheckboxChange.bind(this);
     }
 
@@ -12,6 +13,10 @@ class SearchBar extends React.Component{
         this.props.search({
             [ev.target.name]: ev.target.value
         });
+    }
+
+    onSubmit(ev){
+        ev.preventDefault();
     }
 
     onCheckboxChange(ev){
@@ -22,7 +27,7 @@ class SearchBar extends React.Component{
 
     render() {
         return (
-            <form>
+            <form onSubmit={this.onSubmit}>
                 <input name="search" autoComplete="off" onChange={this.onChange} placeholder="Search..."/>
                 <div>
                     <label>
